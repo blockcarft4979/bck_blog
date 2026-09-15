@@ -14,8 +14,18 @@ SortBy         = "default"
     lastUpdated = ":date_full"
 
 [sidebar]
-    compact = false
-    avatar  = ""
+  # 头像位置（替换成你自己的头像链接，建议传到图床或者放在 static/img/ 下）
+  avatar = "https://github.com/blockcarft4979.png" 
+  
+  # 把默认的 "A text-focused Jekyll theme" 改成你自己的个性签名
+  subtitle = "高三党 / Android Compose 爱好者 / Homelab 折腾狂魔"
+  
+  # 底部社交图标（把注释取消掉，填入你的真实信息）
+  [sidebar.social]
+    GitHub = "blockcarft4979"
+    Email = "Blockcarft114@gmail.com"
+    # Bilibili = "你的UID"
+    # RSS = true
 
 [article]
     headingAnchor = false
@@ -25,10 +35,10 @@ SortBy         = "default"
 
     [article.list]
         # Showing article tags in the list view (e.g. homepage, section pages)
-        showTags = false
+        showTags = true
 
     [article.license]
-        enabled = false
+        enabled = true
         default = "Licensed under CC BY-NC-SA 4.0"
 
     # Mermaid diagram configuration
