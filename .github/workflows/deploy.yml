@@ -24,12 +24,17 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: Clone Theme
+        run: |
+          mkdir -p themes
+          git clone https://github.com/CaiJimmy/hugo-theme-stack themes/hugo-theme-stack
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.160.1'
           extended: true
-
+          
       - name: Build
         run: hugo --minify
 
