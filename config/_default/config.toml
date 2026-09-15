@@ -1,0 +1,17 @@
+baseURL = "https://bck.freewd.top/"
+languageCode = "zh-cn"
+title = "BLOCKCARFT"
+theme = "hugo-theme-stack"
+
+paginate = 10
+
+defaultContentLanguage = "zh-cn"
+
+[services]
+  [services.googleAnalytics]
+    ID = "" # 如果需要谷歌分析可以填，不需要留空
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
